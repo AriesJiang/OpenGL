@@ -42,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(mGLSurfaceView);
     }
 
+    /**
+     * 兼容性检查，是否支持opengl 3.0 最低android版本4.3
+     * @return
+     */
     private boolean detectOpenGLES30()
     {
         ActivityManager am =
