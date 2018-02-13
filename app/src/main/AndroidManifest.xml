@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".helloworld.TriangleActivity" />
+        <activity android:name=".change.TutorialPartIActivity" />
+        <activity android:name=".helloworld.HelloActivity"></activity>
     </application>
 
 </manifest>

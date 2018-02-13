@@ -6,13 +6,34 @@
     android:layout_height="match_parent"
     tools:context="com.aries.opengl.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/opengl_hello"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="50dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="hello"
+        android:onClick="onFFmpegClick"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/opengl_triangle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opengl_hello"
+        android:text="triangle"
+        android:onClick="onFFmpegClick"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/opengl_square"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opengl_triangle"
+        android:text="square"
+        android:onClick="onFFmpegClick"
+        android:layout_margin="5dp"/>
 
 </android.support.constraint.ConstraintLayout>
