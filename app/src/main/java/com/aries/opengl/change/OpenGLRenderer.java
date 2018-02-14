@@ -9,6 +9,7 @@ import android.opengl.GLSurfaceView.Renderer;
 /**
  * OPENGL ES 教程
  * https://www.jianshu.com/p/b0bbf3d0ace3
+ * https://blog.piasy.com/2016/06/07/Open-gl-es-android-2-part-1/
  */
 public class OpenGLRenderer implements Renderer {
 	
