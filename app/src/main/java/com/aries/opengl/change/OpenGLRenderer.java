@@ -7,6 +7,7 @@ import android.opengl.GLU;
 import android.opengl.GLSurfaceView.Renderer;
 
 /**
+ * OPENGL ES 教程
  * https://www.jianshu.com/p/b0bbf3d0ace3
  */
 public class OpenGLRenderer implements Renderer {
@@ -60,6 +61,7 @@ public class OpenGLRenderer implements Renderer {
 		// Save the current matrix.
 		gl.glPushMatrix();
 		// Rotate square A counter-clockwise.
+		gl.glClearColor(1.0f, 0.0f, 0.0f, 0.5f);  // OpenGL docs.
 		gl.glRotatef(angle, 0, 0, 1);
 		// Draw square A.
 		square.draw(gl);
@@ -69,6 +71,7 @@ public class OpenGLRenderer implements Renderer {
 		// SQUARE B
 		// Save the current matrix
 		gl.glPushMatrix();
+		gl.glClearColor(0.0f, 1.0f, 0.0f, 0.5f);  // OpenGL docs.
 		// Rotate square B before moving it, making it rotate around A.
 		gl.glRotatef(-angle, 0, 0, 1);
 		// Move square B.
@@ -81,6 +84,7 @@ public class OpenGLRenderer implements Renderer {
 		// SQUARE C
 		// Save the current matrix
 		gl.glPushMatrix();
+		gl.glClearColor(0.0f, 0.0f, 1.0f, 0.5f);  // OpenGL docs.
 		// Make the rotation around B
 		gl.glRotatef(-angle, 0, 0, 1);
 		gl.glTranslatef(2, 0, 0);
